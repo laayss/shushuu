@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2c6de;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #990000;
+    font-weight: bold;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #990000;
+}
+
+.header-images {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.header-images img {
+    width: 435px; /* Increase the width */
+    height: 130px; /* Increase the height */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 600px) {
+    .header-images img {
+        width: 100px; /* Increase the width for smaller screens */
+        height: 100px; /* Increase the height for smaller screens */
+    }
+}
+
+
+main {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.intro h2 {
+    font-size: 2em;
+    color: #990000;
+}
+
+.memory {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.memory-item {
+    background-color: #fff0f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.memory-item:hover {
+    background-color: #ffd6e8;
+}
+
+.memory-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.memory-info h2 {
+    color: #ff66b2;
+    margin: 0;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.memory-info h2:hover {
+    color: #cc3385;
+}
+
+.memory-info p {
+    color: #666;
+    margin: 5px 0 0;
+}
+
+footer {
+    background-color: #f2c6de;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #990000;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header-images img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .memory {
+        padding: 0.5em;
+    }
+
+    header h1, .description h2 {
+        font-size: 1.5em;
+    }
+
+    .intro h2 {
+        font-size: 1.5em;
+    }
+    @media (max-width: 768px) {
+        .memory-item {
+            width: 100%;
+        }
+    }
+}

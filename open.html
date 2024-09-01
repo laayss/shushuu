@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oPenInG sgur0</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #ffe6f2; /* Soft pink background */
+            overflow-x: hidden;
+        }
+
+        /* Decorative Side Designs */
+        .side-design {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 50px;
+            background-color: #ffb3c6; /* Soft pink color for the sides */
+        }
+
+        .side-design.left {
+            left: 0;
+            border-radius: 0 20px 20px 0;
+        }
+
+        .side-design.right {
+            right: 0;
+            border-radius: 20px 0 0 20px;
+        }
+
+        .cute-section {
+            background-color: #ffccdf; /* Slightly darker pink for contrast */
+            padding: 50px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            width: 80%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cute-text {
+            font-size: 1.2em; /* Smaller font size for readability */
+            color: #ff69b4; /* Hot pink text color */
+            text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.5);
+            white-space: normal; /* Allows text to wrap */
+            overflow: hidden;
+            border-right: 3px solid #ff69b4;
+            display: inline-block;
+            animation: typing 10s steps(500) forwards, blink 1s step-end infinite;
+        }
+
+        /* Typing Animation */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 50%; }
+        }
+
+        @keyframes blink {
+            from { border-right-color: #ff69b4; }
+            to { border-right-color: transparent; }
+        }
+
+        /* Bounce Effect */
+        .bounce {
+            animation: bounceAnimation 0.5s ease infinite;
+        }
+
+        @keyframes bounceAnimation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        
+        .next-arrow {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            z-index: 2;
+        }
+
+        .next-arrow:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Decorative Side Designs -->
+<div class="side-design left"></div>
+<div class="side-design right"></div>
+
+<div class="cute-section">
+    <p class="cute-text">hi bb, I made this website as a gift for u sa anniversary natin.. I made this nung August pa so forgive me if I ever missed something sa September... 
+        Actually, us2 ko sana like gumawa ng parang scrapbook tapos andun lahat ng fav memories q w/ u pero dele man aq ganun ka creative heueheu so sorryyy e2 lang makayanan ko,,, 
+        The design/layout of the website may not be that bongga or anything exquisite kac d talaga aq kreeytib ba huehdue, pero I made this and put all of the memories we had that for me is unforgettable.. 
+        like ket pictures lang yan, pag nakita q un naaalala ko ung nangyari that day.. kaya this is like smth a memory lane of the memories we made together as lovers n friends for the past year.. I hope u enjoi bb,,, every button works naman diyan so u can exploreee. I love u so mucchhhh</p>
+</div>
+
+<!-- Next Arrow Button -->
+<button class="next-arrow" onclick="goToNextPage()">&#x27A4;</button>
+
+<script>
+    function goToNextPage() {
+        // Replace 'nextpage.html' with the actual link to your next page
+        window.location.href = '2.html';
+    }
+</script>
+
+</body>
+</html>
